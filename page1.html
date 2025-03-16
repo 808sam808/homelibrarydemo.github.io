@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Bookpedia :: Library</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="My book collection, created using Bookpedia and FancyIndex." />
+<meta name="keywords" content="Bookpedia, Mac, Catalog, books, collection, Bruji" />
+<meta name="credits" content="Includes live search, sortable columns, and a details popup." />
+<meta name="PageSplit" content="50000" /> <!-- If you have more than 50000 books... you should start a library! -->
+<meta name="image-export" content="no" />
+<meta name="date-format" content="yyyy-MM-dd" />
+<meta name="PrintLandscape" content="yes" />
+<meta name="details" content="FancyIndexDetails.html" />
+
+<link rel="shortcut icon" href="Images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="Images/tablesorter/style.css" />
+<link rel="stylesheet" type="text/css" href="Images/colorbox/colorbox.css" />
+<link rel="stylesheet" type="text/css" href="Images/fi.css" />
+<link rel="stylesheet" type="text/css" href="Images/print.css" media="print" />
+
+<script type="text/javascript" src="Images/jquery/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="Images/jquery/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="Images/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript" src="Images/fi.shared.js"></script>
+<script type="text/javascript" src="Images/fi.js"></script>
+
+</head>
+<body>
+
+<div class="content">
+<span id="search">Search:</span> <input id="filter" type="text" />
+<!--IFIndex<span id="index">Page: [Divider: | ]</span>ENDIndex-->
+<div id="emptyresults">Sorry, no results found.</div>
+<table id="sortable" class="tablesorter">
+	<thead>
+		<tr>
+			<!-- There is a 2em padding-right for the arrows if the columns are empty -->
+			<th id="translateTitle">Title</th>
+			<th id="translateAuthor">Author</th>
+			<th id="translatePublisher">Publisher</th>
+			<th id="translateGenre">Genre</th>
+			<th id="translatePages">Pages</th>
+			<th id="translateRating">Rating</th>
+			<th id="translateStarRating">My Rating</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td id="summarytd" colspan="9">TOTAL BOOKS: <span id="globalTotalEntries">9</span></td>
+		</tr>
+	</tfoot>
+	<tbody>
+	<!-- Documentation for Template editors!  You wanted it, you got it!
+	
+	class lbr (let's be reasonable) limits the field length to 20em - good for excessively long fields that would make the table too wide
+	class smr (somewhat reasonable), limits to 40em - good for titles
+	class nw (nowrap) doesn't let the browser break a field to a second line - good for titles that you never want squeezed
+	class cb (colorbox) is for pages that get a popup from a link - any <a> should probably have it
+	class cen (center) is for fields that you'd like center-aligned
+	
+	-->
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/4.html">The bazaar of bad dreams</a></td>
+			<td><div class="lbr">Stephen King</div></td>
+			<td><div class="lbr">Scribner</div></td>
+			<td><div class="lbr">Fiction, Horror fiction, Thrillers (Fiction)</div></td>
+			<td><div class="cen"></div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/3.html">Broken Music: A Memoir</a></td>
+			<td><div class="lbr">Sting</div></td>
+			<td><div class="lbr">The Dial Press</div></td>
+			<td><div class="lbr">Rock</div></td>
+			<td><div class="cen">352</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/8.html">Everything&#39;s Eventual: 14 Dark Tales</a></td>
+			<td><div class="lbr">Stephen King</div></td>
+			<td><div class="lbr">Pocket Books</div></td>
+			<td><div class="lbr"></div></td>
+			<td><div class="cen">608</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/5.html">Just After Sunset: Stories</a></td>
+			<td><div class="lbr">Stephen King</div></td>
+			<td><div class="lbr">Scribner</div></td>
+			<td><div class="lbr">Fiction, Horror, Literary, Short Stories (single author)</div></td>
+			<td><div class="cen">384</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/1.html">Merchant of Venice: Deluxe Student Edition</a></td>
+			<td><div class="lbr">Sparknotes, William Shakespeare</div></td>
+			<td><div class="lbr">Spark</div></td>
+			<td><div class="lbr">Drama, Shakespeare, Literary Criticism, Study Aids, Book Notes</div></td>
+			<td><div class="cen">272</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/9.html">Night Shift</a></td>
+			<td><div class="lbr">Stephen King</div></td>
+			<td><div class="lbr">Penguin Publishing Group</div></td>
+			<td><div class="lbr">Fiction, Horror, Media Tie-In</div></td>
+			<td><div class="cen">326</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/7.html">Nightmares &amp; Dreamscapes</a></td>
+			<td><div class="lbr">Stephen King</div></td>
+			<td><div class="lbr">Pocket Books</div></td>
+			<td><div class="lbr">Fiction, Short Stories (single author), Media Tie-In</div></td>
+			<td><div class="cen">912</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/2.html">Stories</a></td>
+			<td><div class="lbr">John Grisham</div></td>
+			<td><div class="lbr">Century</div></td>
+			<td><div class="lbr">Modern &amp;amp, contemporary fiction (post c 1945)</div></td>
+			<td><div class="cen"></div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+		<tr>
+			<td class="smr"><a class="cb nw" href="details/6.html">Treausre Island</a></td>
+			<td><div class="lbr">BPI</div></td>
+			<td><div class="lbr">BPI Publishing</div></td>
+			<td><div class="lbr">Reference, Dictionaries</div></td>
+			<td><div class="cen">144</div></td>
+			<td><div class="cen"></div></td>
+			<td><div><img src="Images/darkstar0.png" alt="Rating" /></div></td>
+		</tr>
+		
+	</tbody>
+</table>
+</div>
+<div class="credits">Last updated Mar 16, 2025 :: Exported from <a href="http://www.bruji.com/" title="Bruji, Chiguire LLC">Bruji</a>'s <a href="http://www.bruji.com/bookpedia/">Bookpedia</a> :: FancyIndex by <a href="http://www.twoevils.org/">April King</a></div>
+</body>
+</html>
